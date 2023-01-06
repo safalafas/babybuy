@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">BabyBuy</string>
+    <string name="edt_email">Email</string>
+    <string name="edt_pwd">Password</string>
+    <string name="txt_register">Don\'t have an account yet? Create a new one.</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="txt_login">Already have an account? Click here to login.</string>
+    <string name="edt_name">Full Name</string>
+    <string name="edt_cpassword">Confirm Password</string>
+    <string name="email_error">Invalid Email Address</string>
+    <string name="password_error">Password is too weak.</string>
+    <string name="confirmation_error">The two password fields do not match.</string>
+    <string name="error_empty_fields_title">Error!</string>
+    <string name="error_empty_fields">This field cannot be empty</string>
+    <string name="error_email_exists">Email already registered</string>
+    <string name="error_login">Incorrect email or password</string>
+    <string name="error_permission_required">The app needs these permissions to function properly. Your app won\'t work if those permissions aren\'t granted.</string>
+    <string name="permission_granted">Permission Granted</string>
+    <string name="i">I</string>
+    <string name="purchased">Purchased</string>
+    <string name="not_purchased">Not Purchased</string>
+    <string name="update">Update</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

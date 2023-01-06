@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/rounded" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/optionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpNotPurchased"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:text="Not Purchased" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpPurchased"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:text="Purchased" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort 	&#8942;" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvwItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

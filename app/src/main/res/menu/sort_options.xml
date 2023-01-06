@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_sort_date"
+        android:title="Sort by Date"
+        app:icon="@drawable/ic_date_range_black_24dp" />
+
+    <item
+        android:id="@+id/menu_sort_alphabetically"
+        android:title="Sort Alphabetically"
+        app:icon="@drawable/ic_sort_alpha_black_24dp" />
+
+</menu>

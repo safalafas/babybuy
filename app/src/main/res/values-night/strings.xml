@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email_error">Invalid Email Address</string>
+    <string name="password_error">Weak Password. Should be at least 8 characters long with at least one capital letter, one small letter, one numeric character, and one special character.</string>
+    <string name="confirmation_error">The two password fields do not match.</string>
+    <string name="error_email_exists">Email already registered</string>
+    <string name="error_login">Incorrect email or password</string>
+    <string name="error_permission_required">The app needs these permissions to function properly. Your app won\'t work if those permissions aren\'t granted.</string>
+    <string name="permission_granted">Permission Granted</string>
+    <string name="i">I</string>
+    <string name="purchased">Purchased ✅</string>
+    <string name="not_purchased">Not Purchased</string>
+</resources>

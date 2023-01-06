@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuEdit"
+        android:title="Edit" />
+    <item
+        android:id="@+id/menuPurchase"
+        android:title="Mark as Purchased" />
+    <item
+        android:id="@+id/menuSend"
+        android:title="Share" />
+
+    <item
+        android:id="@+id/menuDelete"
+        android:title="Delete" />
+</menu>
