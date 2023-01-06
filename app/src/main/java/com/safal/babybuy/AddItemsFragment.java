@@ -45,6 +45,7 @@ public class AddItemsFragment extends Fragment {
     private static final int REQUEST_IMAGE_PICK = 2;
     private static final int CAMERA_PERMISSION_REQUEST_CODE = 1;
     private static final int GALLERY_PERMISSION_REQUEST_CODE = 2;
+    private int id;
 
     //Declare data binding class
     FragmentAddItemsBinding binding;
@@ -83,6 +84,7 @@ public class AddItemsFragment extends Fragment {
         if (getArguments()!=null) {
             isUpdateQuery=true;
             item= (Item) getArguments().getSerializable("item");
+            id = item.id;
             Bitmap img = BitmapFactory.decodeByteArray(item.getImage(), 0, item.getImage().length);
             imageItem.setImageBitmap(img);
             editName.setText(item.getName());
@@ -141,6 +143,7 @@ public class AddItemsFragment extends Fragment {
             }
             //if user is trying to add item
             else {
+                item=new Item(id, name, price, description, image, saveDate, isPurchased?getString(R.string.purchased):getString(R.string.not_purchased));
                 model.updateItem(item);
             }
             //navigate to daswhboard fragment

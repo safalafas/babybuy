@@ -30,6 +30,17 @@ public class Item implements Serializable {
         this.status = status;
     }
 
+    @Ignore
+    Item(int id, String name, String price, String description, byte[] image, String saveDate, String status) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.image = image;
+        this.saveDate = saveDate;
+        this.status = status;
+    }
+
     public int getId() {
         return id;
     }
